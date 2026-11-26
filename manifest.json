@@ -1,0 +1,24 @@
+
+{
+    "name": "Broaster y Chifa Charding",
+    "short_name": "Charding",
+    "description": "Realiza tus pedidos de broaster, chifa y bebidas.",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#d62828",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "imagen/icono-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "imagen/icono-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

@@ -1,0 +1,873 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Broasteria, Chifa "Charding">
+    <title>Broasteria, Chifa "Charding"</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- CONFIGURACIÓN DE LA APLICACIÓN -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#d62828">
+<link rel="apple-touch-icon" href="imagen/icono-192.png">
+</head>
+<body>
+
+    <header class="encabezado">
+        <a href="#inicio" class="logo"> CHARDING</a>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#menu">Menú</a>
+            <a href="#galeria">Galería</a>
+            <a href="#bebidas">Bebidas</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <a href="#pedido" class="boton-pedido">Haz tu pedido</a>
+    </header>
+
+    <main>
+
+        <section class="portada" id="inicio">
+            <div class="contenido-portada">
+                <span class="etiqueta">SABOR QUE ENAMORA</span>
+                <h1>El sabor que mereces disfrutar</h1>
+                <p>Disfruta nuestros deliciosos pollos broaster, platos chifa y mucho más.</p>
+                <a href="#menu" class="boton-principal">DESCUBRIR MENÚ</a>
+            </div>
+        </section>
+
+        <section class="seccion" id="menu">
+            <div class="titulo-seccion">
+                <span>NUESTROS SABORES</span>
+                <h2>Descubre nuestro menú</h2>
+                <p>Deliciosos platos preparados para ti.</p>
+            </div>
+
+            
+<div class="contenedor-menu">
+
+    <!-- 1. PLATOS PRINCIPALES -->
+    
+<article class="plato">
+    <div class="datos-plato">
+        <h3>Platos principales</h3>
+        <p>Preparados al momento para disfrutar.</p>
+
+        <div class="producto">
+        <img src="imagen/bro.jpeg" alt="Pollo Broaster" class="imagen-producto">    
+            <p>Pollo Broaster</p>
+            <select class="precio-producto">
+                <option value="5">S/ 5.00</option>
+                <option value="6">S/ 6.00</option>
+                <option value="8">S/ 8.00</option>
+            </select>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Pollo Broaster">
+                Agregar al carrito
+            </button>
+        </div>
+
+        <div class="producto">
+            <img src="imagen/octavo.jpg" alt="Pollo a la brasa 1/8" class="imagen-producto">
+            <p>Pollo a la brasa 1/8</p>
+            <strong>S/ 8.00</strong>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Pollo a la brasa 1/8" data-precio="8">
+                Agregar al carrito
+            </button>
+        </div>
+
+        <div class="producto">
+            <img src="imagen/cuarto.jpg" alt="Pollo a la brasa 1/8" class="imagen-producto">
+            <p>Pollo a la brasa 1/4</p>
+            <strong>S/ 16.00</strong>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Pollo a la brasa 1/4" data-precio="16">
+                Agregar al carrito
+            </button>
+        </div>
+
+        <div class="producto">
+            <img src="imagen/lomo.jpg" alt="Lomo saltado" class="imagen-producto">
+            <p>Lomo saltado</p>
+            <strong>S/ 12.00</strong>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Lomo saltado" data-precio="12">
+                Agregar al carrito
+            </button>
+        </div>
+
+        <div class="producto">
+                   <img src="imagen/tallarin saltado.jpg" alt="tallarin saltado" class="imagen-producto">
+            <p>Tallarín saltado</p>
+            <strong>S/ 10.00</strong>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Tallarín saltado" data-precio="10">
+                Agregar al carrito
+            </button>
+        </div>
+    </div>
+</article>
+
+
+    
+<!-- 2. ARROCES ESPECIALES -->
+<article class="plato">
+    <div class="datos-plato">
+        <h3>Arroces especiales</h3>
+        <p>Una combinación llena de sabor.</p>
+
+        <div class="producto">
+            <img src="imagen/aeropuerto.jpg" alt="Aeropuerto simple" class="imagen-producto">
+            <p>Aeropuerto simple</p>
+            <strong>S/ 10.00</strong>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Aeropuerto simple" data-precio="10">
+                Agregar al carrito
+            </button>
+        </div>
+
+        <div class="producto">
+            <img src="imagen/chaufa.jpg" alt="Arroz chaufa especial" class="imagen-producto">
+            <p>Chaufa de pollo</p>
+            <strong>S/ 10.00</strong>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Arroz chaufa especial" data-precio="15">
+                Agregar al carrito
+            </button>
+        </div>
+
+        <div class="producto">
+            <img src="imagen/arrozde res.jpg" alt="Arroz chaufa salvaja" class="imagen-producto">
+            <p>Chaufa de res</p>
+            <strong>S/ 10.00</strong>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Arroz chaufa salvaja" data-precio="15">
+                Agregar al carrito
+            </button>
+        </div>
+
+        <div class="producto">
+            <img src="imagen/arrozmixto.jpg" alt="Arroz chaufa salvaja" class="imagen-producto">
+            <p>Arroz chaufa mixto</p>
+            <strong>S/ 15.00</strong>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Arroz chaufa mixto" data-precio="15">
+                Agregar al carrito
+            </button>
+        </div>
+
+        <div class="producto">
+            <p>Arroz chaufa mixto</p>
+            <img src="imagen/arroz1.jpg" alt="Arroz chaufa salvaja" class="imagen-producto">
+            <strong>S/ 15.00</strong>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Arroz chaufa mixto" data-precio="15">
+                Agregar al carrito
+            </button>
+        </div>
+    </div>
+</article>
+
+
+  
+<!-- 3. COMBINADOS -->
+<article class="plato">
+    <div class="datos-plato">
+        <h3>Combinados</h3>
+        <p>Disfruta el auténtico sabor oriental.</p>
+
+        <div class="producto">
+            <img src="imagen/combinado.jpg" alt="Arroz chaufa salvaja" class="imagen-producto">
+            <p>Combinado chifa</p>
+            <strong>S/ 13.00</strong>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Combinado chifa" data-precio="13">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="imagen/combinadolomo.jpg" alt="Arroz chaufa salvaja" class="imagen-producto">
+            <p>Combinado con lomo</p>
+            <strong>S/ 12.00</strong>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Combinado con lomo" data-precio="12">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="imagen/combinadochifa.jpg" alt="Arroz chaufa salvaja" class="imagen-producto">
+            <p>Combinado con tallarín</p>
+            <strong>S/ 12.00</strong>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Combinado con tallarín" data-precio="12">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="imagen/polloconverdura.png" alt="Arroz chaufa salvaja" class="imagen-producto">
+            <p>Pollo con verdura</p>
+            <strong>S/ 13.00</strong>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Pollo con verdura" data-precio="13">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="imagen/pollocontamarindo.jpg" alt="Arroz chaufa salvaja" class="imagen-producto">
+            <p>Pollo con tamarindo</p>
+            <strong>S/ 13.00</strong>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Pollo con tamarindo" data-precio="13">Agregar al carrito</button>
+        </div>
+
+ 
+<!-- POLLO CON BRÓCOLI -->
+<div class="producto">
+    <img src="imagen/pollo-brocoli.jpg" alt="Pollo con brócoli" class="imagen-producto">
+    <p>Pollo con brócoli</p>
+    <strong>S/ 13.00</strong>
+    <input type="number" class="cantidad-producto" value="1" min="1">
+    <button class="agregar-carrito" data-nombre="Pollo con brócoli" data-precio="13">Agregar al carrito</button>
+</div>
+
+<!-- POLLO CHI JAU KAY -->
+<div class="producto">
+    <img src="imagen/pollo-chi-jau-kay.jpg" alt="Pollo Chi Jau Kay" class="imagen-producto">
+    <p>Pollo Chi Jau Kay</p>
+    <strong>S/ 13.00</strong>
+    <input type="number" class="cantidad-producto" value="1" min="1">
+    <button class="agregar-carrito" data-nombre="Pollo Chi Jau Kay" data-precio="13">Agregar al carrito</button>
+</div>
+</div>
+</article>
+
+<!-- 4. SOPAS Y CALDOS -->
+<article class="plato">
+    <div class="datos-plato">
+        <h3>Sopas y caldos</h3>
+        <p>Calientitos y deliciosos.</p>
+
+        <div class="producto">
+            <img src="imagen/sopa-wantan.jpg" alt="Sopa wantan" class="imagen-producto">
+            <p>Sopa wantan</p>
+            <strong>S/ 10.00</strong>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Sopa wantan" data-precio="10">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="imagen/sopa-kion.jpg" alt="Sopa de kión" class="imagen-producto">
+            <p>Sopa de kión</p>
+            <strong>S/ 10.00</strong>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Sopa de kión" data-precio="10">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="imagen/sopa-sustancia.jpg" alt="Sopa de sustancia" class="imagen-producto">
+            <p>Sopa de sustancia</p>
+            <strong>S/ 10.00</strong>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Sopa de sustancia" data-precio="10">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="imagen/sopa-criolla.jpg" alt="Sopa criolla" class="imagen-producto">
+            <p>Sopa criolla</p>
+            <strong>S/ 12.00</strong>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Sopa criolla" data-precio="12">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="imagen/sopa-minuta.jpg" alt="Sopa a la minuta" class="imagen-producto">
+            <p>Sopa a la minuta</p>
+            <strong>S/ 12.00</strong>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Sopa a la minuta" data-precio="12">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="imagen/caldo-gallina.jpg" alt="Caldo de gallina" class="imagen-producto">
+            <p>Caldo de gallina</p>
+            <strong>S/ 10.00</strong>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Caldo de gallina" data-precio="10">Agregar al carrito</button>
+        </div>
+    </div>
+</article>
+
+<!-- 5. TORTILLAS -->
+<article class="plato">
+    <div class="datos-plato">
+        <h3>Tortillas</h3>
+        <p>Elige tu preparación favorita.</p>
+
+        <div class="producto">
+            <img src="imagen/tortilla-pollo.jpg" alt="Tortilla de res" class="imagen-producto">
+            <p>Tortilla de res</p>
+            <strong>S/ 12.00</strong>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Tortilla de res" data-precio="12">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="imagen/tortilla-pollo.jpg" alt="Tortilla de pollo" class="imagen-producto">
+            <p>Tortilla de pollo</p>
+            <strong>S/ 12.00</strong>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Tortilla de pollo" data-precio="12">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="imagen/tortilla-verdura.jpg" alt="Tortilla de verdura" class="imagen-producto">
+            <p>Tortilla de verdura</p>
+            <strong>S/ 12.00</strong>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Tortilla de verdura" data-precio="12">Agregar al carrito</button>
+        </div>
+    </div>
+</article>
+
+<!-- 6. PORCIONES -->
+<article class="plato">
+    <div class="datos-plato">
+        <h3>Porciones</h3>
+        <p>Los mejores acompañamientos.</p>
+
+        <div class="producto">
+            <img src="imagen/porcion-papa.jpg" alt="Porción de papa" class="imagen-producto">
+            <p>Papa</p>
+            <strong>S/ 4.00</strong>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Papa" data-precio="4">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="imagen/porcion-arroz-chaufa.jpg" alt="Porción de arroz chaufa" class="imagen-producto">
+            <p>Arroz chaufa</p>
+            <strong>S/ 3.00</strong>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Arroz chaufa" data-precio="3">Agregar al carrito</button>
+        </div>
+
+
+        <div class="producto">
+            <img src="imagen/porcion-arroz-blanco.jpg" alt="Porción de arroz blanco" class="imagen-producto">
+            <p>Arroz blanco</p>
+            <strong>S/ 3.00</strong>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Arroz blanco" data-precio="3">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="imagen/porcion-wantan.png" alt="Porción de wantán" class="imagen-producto">
+            <p>Wantán</p>
+            <strong>S/ 6.00</strong>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Wantán" data-precio="6">Agregar al carrito</button>
+        </div>
+    </div>
+</article>
+
+</div>
+
+            </div>
+        </section>
+
+
+<section class="seccion" id="bebidas">
+
+    <div class="titulo-seccion">
+        <span>REFRESCANTES Y DELICIOSAS</span>
+        <h2>Bebidas para acompañar</h2>
+        <p>El complemento perfecto para disfrutar cada momento.</p>
+    </div>
+
+    <div class="contenedor-menu">
+
+        <!-- GASEOSAS -->
+        <article class="plato">
+            <div class="datos-plato">
+                <h3>Gaseosas</h3>
+
+                <div class="producto">
+                    <img src="imagen/inka.png" alt="Inca Kola personal" class="imagen-bebida">
+                    <p>Inca Kola personal</p>
+                    <select class="precio-producto">
+                        <option value="5">S/ 5.00</option>
+                    </select>
+                    <input type="number" class="cantidad-producto" value="1" min="1">
+                    <button class="agregar-carrito" data-nombre="Inca Kola personal">Agregar al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="imagen/inkagrande.png" alt="Inca Kola mediana" class="imagen-bebida">
+                    <p>Inca Kola mediana</p>
+                    <select class="precio-producto">
+                        <option value="11">S/ 11.00</option>
+                    </select>
+                    <input type="number" class="cantidad-producto" value="1" min="1">
+                    <button class="agregar-carrito" data-nombre="Inca Kola mediana">Agregar al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="imagen/cocapequeña.png" alt="Coca-Cola personal" class="imagen-bebida">
+                    <p>Coca-Cola personal</p>
+                    <select class="precio-producto">
+                        <option value="5">S/ 5.00</option>
+                    </select>
+                    <input type="number" class="cantidad-producto" value="1" min="1">
+                    <button class="agregar-carrito" data-nombre="Coca-Cola personal">Agregar al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="imagen/cocagrande.png" alt="Coca-Cola mediana" class="imagen-bebida">
+                    <p>Coca-Cola mediana</p>
+                    <select class="precio-producto">
+                        <option value="11">S/ 11.00</option>
+                    </select>
+                    <input type="number" class="cantidad-producto" value="1" min="1">
+                    <button class="agregar-carrito" data-nombre="Coca-Cola mediana">Agregar al carrito</button>
+                </div>
+
+               
+<div class="producto">
+    <img src="imagen/krpequeña.png" alt="KR personal" class="imagen-bebida">
+    <p>KR personal</p>
+
+    <label>Elige el sabor:</label>
+    <select class="sabor-producto">
+        <option value="Roja">Roja</option>
+        <option value="Negra">Negra</option>
+        <option value="Amarilla">Amarilla</option>
+        <option value="Anaranjada">Anaranjada</option>
+        <option value="Piña">Piña</option>
+    </select>
+
+    <select class="precio-producto">
+        <option value="2">S/ 2.00</option>
+    </select>
+
+    <input type="number" class="cantidad-producto" value="1" min="1">
+
+    <button class="agregar-carrito" data-nombre="KR personal">
+        Agregar al carrito
+    </button>
+</div>
+
+<div class="producto">
+    <img src="imagen/krmediana.jpeg" alt="KR mediana" class="imagen-bebida">
+    <p>KR mediana</p>
+
+    <label>Elige el sabor:</label>
+    <select class="sabor-producto">
+        <option value="Roja">Roja</option>
+        <option value="Negra">Negra</option>
+        <option value="Amarilla">Amarilla</option>
+        <option value="Anaranjada">Anaranjada</option>
+        <option value="Piña">Piña</option>
+    </select>
+
+    <select class="precio-producto">
+        <option value="6">S/ 6.00</option>
+    </select>
+
+    <input type="number" class="cantidad-producto" value="1" min="1">
+
+    <button class="agregar-carrito" data-nombre="KR mediana">
+        Agregar al carrito
+    </button>
+</div>
+
+<div class="producto">
+    <img src="imagen/krgrande.jpeg" alt="KR grande" class="imagen-bebida">
+    <p>KR grande</p>
+
+    <label>Elige el sabor:</label>
+    <select class="sabor-producto">
+        <option value="Roja">Roja</option>
+        <option value="Negra">Negra</option>
+        <option value="Amarilla">Amarilla</option>
+        <option value="Anaranjada">Anaranjada</option>
+        <option value="Piña">Piña</option>
+    </select>
+
+    <select class="precio-producto">
+        <option value="10">S/ 10.00</option>
+    </select>
+
+    <input type="number" class="cantidad-producto" value="1" min="1">
+
+    <button class="agregar-carrito" data-nombre="KR grande">
+        Agregar al carrito
+    </button>
+</div>
+
+
+                <div class="producto">
+                    <img src="imagen/pepsichica.jpeg" alt="Pepsi personal" class="imagen-bebida">
+                    <p>Pepsi personal</p>
+                    <select class="precio-producto">
+                        <option value="2">S/ 2.00</option>
+                    </select>
+                    <input type="number" class="cantidad-producto" value="1" min="1">
+                    <button class="agregar-carrito" data-nombre="Pepsi personal">Agregar al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="imagen/pepsi2.jpeg" alt="Pepsi" class="imagen-bebida">
+                    <p>Pepsi</p>
+                    <select class="precio-producto">
+                        <option value="4">S/ 4.00</option>
+                    </select>
+                    <input type="number" class="cantidad-producto" value="1" min="1">
+                    <button class="agregar-carrito" data-nombre="Pepsi">Agregar al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="imagen/guaranita.png" alt="Guaranita personal" class="imagen-bebida">
+                    <p>Guaranita personal</p>
+                    <select class="precio-producto">
+                        <option value="2">S/ 2.00</option>
+                    </select>
+                    <input type="number" class="cantidad-producto" value="1" min="1">
+                    <button class="agregar-carrito" data-nombre="Guaranita personal">Agregar al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="imagen/guarana.png" alt="Guaraná personal" class="imagen-bebida">
+                    <p>Guaraná personal</p>
+                    <select class="precio-producto">
+                        <option value="3">S/ 3.00</option>
+                    </select>
+                    <input type="number" class="cantidad-producto" value="1" min="1">
+                    <button class="agregar-carrito" data-nombre="Guaraná personal">Agregar al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="imagen/agua.jpeg" alt="Agua personal" class="imagen-bebida">
+                    <p>Agua personal</p>
+                    <select class="precio-producto">
+                        <option value="2">S/ 2.00</option>
+                    </select>
+                    <input type="number" class="cantidad-producto" value="1" min="1">
+                    <button class="agregar-carrito" data-nombre="Agua personal">Agregar al carrito</button>
+                </div>
+
+            </div>
+        </article>
+
+       
+<!-- REFRESCOS DE FRUTAS -->
+<article class="plato">
+    <div class="datos-plato">
+        <h3>Refrescos de Frutas</h3>
+
+        <div class="producto">
+            <img src="imagen/piña.jpeg" alt="Refresco de piña" class="imagen-bebida">
+            <p>Piña</p>
+            <select class="precio-producto">
+                <option value="1">S/ 1.00</option>
+            </select>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Refresco de piña">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="imagen/cebada.jpeg" alt="Refresco de cebada" class="imagen-bebida">
+            <p>Cebada</p>
+            <select class="precio-producto">
+                <option value="1">S/ 1.00</option>
+            </select>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Refresco de cebada">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="imagen/maiz.jpg" alt="Refresco de maíz morado" class="imagen-bebida">
+            <p>Maíz morado</p>
+            <select class="precio-producto">
+                <option value="1">S/ 1.00</option>
+            </select>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Refresco de maíz morado">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="imagen/camucamu.jpeg" alt="Refresco de camu camu" class="imagen-bebida">
+            <p>Camu camu</p>
+            <select class="precio-producto">
+                <option value="1">S/ 1.00</option>
+            </select>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Refresco de camu camu">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="imagen/cocona1.jpeg" alt="Refresco de cocona" class="imagen-bebida">
+            <p>Cocona</p>
+            <select class="precio-producto">
+                <option value="1">S/ 1.00</option>
+            </select>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Refresco de cocona">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="imagen/maracuya.jpeg" alt="Refresco de maracuyá" class="imagen-bebida">
+            <p>Maracuyá</p>
+            <select class="precio-producto">
+                <option value="1">S/ 1.00</option>
+            </select>
+            <input type="number" class="cantidad-producto" value="1" min="1">
+            <button class="agregar-carrito" data-nombre="Refresco de maracuyá">Agregar al carrito</button>
+        </div>
+
+        <p><strong>Precio por vaso</strong></p>
+
+    </div>
+</article>
+
+
+
+        </section>
+
+ 
+<section class="seccion contacto" id="contacto">
+    <div class="titulo-seccion">
+        <span>ESTAMOS PARA ATENDERTE</span>
+        <h2>Visítanos o haz tu pedido</h2>
+        <p>Contamana, Loreto, Perú.</p>
+    </div>
+
+    <div class="datos-contacto" id="pedido">
+        <p><strong>Negocio:</strong> Broasteria, Chifa "Charding"</p>
+
+        <p><strong>Ubicación:</strong> Prolongación Amazonas, pasando una casa a la derecha del Hotel María Ester, frente a la canchita del Mercado Señor de los Milagros, Contamana, Loreto, Perú.</p>
+
+        <a
+            href="https://www.google.com/maps/search/?api=1&query=-7.3491402%2C-75.0125814"
+            rel="noopener noreferrer"
+            class="boton-maps">
+            Cómo llegar a Charding
+        </a>
+
+        <img
+            src="imagen/fachada-charding.jpeg"
+            alt="Fachada del restaurante Broaster y Chifa Charding"
+            class="imagen-restaurante">
+
+        <p><strong>Pedidos:</strong> Próximamente</p>
+
+        <p><strong>Horario de atención:</strong> 5:00 p. m. a 12:00 a. m.</p>
+
+        <a href="#" class="boton-principal" id="whatsapp">
+            PEDIR POR WHATSAPP
+        </a>
+    </div>
+</section>
+
+
+<!-- GALERÍA DE FOTOGRAFÍAS -->
+<section class="seccion galeria" id="galeria">
+
+    <div class="titulo-seccion">
+        <span>NUESTROS PLATOS</span>
+        <h2>Una mirada a nuestro sabor</h2>
+        <p>Conoce nuestras deliciosas especialidades.</p>
+    </div>
+
+    <div class="contenedor-galeria">
+
+        <div class="foto-galeria">
+            <img src="https://images.unsplash.com/photo-1562967914-608f82629710?w=900" alt="Pollo frito">
+        </div>
+
+        <div class="foto-galeria">
+            <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=900" alt="Arroz chaufa">
+        </div>
+
+        <div class="foto-galeria">
+            <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=900" alt="Comida chifa">
+        </div>
+
+        <div class="foto-galeria">
+            <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=900" alt="Plato especial">
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+
+
+<footer>
+    <h3>BROASTERIA, CHIFA "CHARDING"</h3>
+    <p>El sabor que siempre quieres volver a disfrutar.</p>
+
+    
+<div class="redes-sociales">
+    <!-- FACEBOOK -->
+    <a href="https://www.facebook.com/" target="_blank"
+       rel="noopener noreferrer" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="white">
+            <path d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.3-1.5 1.6-1.5h1.7V3.7c-.3 0-1.3-.2-2.5-.2-2.5 0-4.2 1.5-4.2 4.3v2.1H7.3V13h2.8v8z"/>
+        </svg>
+        Facebook
+    </a>
+
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/51976240888" target="_blank"
+       rel="noopener noreferrer" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="white">
+            <path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.3h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.3-6.1-3.5-8.3zM12.1 21.6c-1.7 0-3.4-.5-4.8-1.3l-.4-.2-3.8 1 1-3.7-.3-.4a9.8 9.8 0 1 1 8.3 4.6zm5.4-7.3c-.3-.2-1.7-.9-2-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.5-.9-.8-1.5-1.7-1.7-2-.2-.3 0-.4.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.6-1-2.1-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.7 1.2 2.9c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4z"/>
+        </svg>
+        WhatsApp
+    </a>
+</div>
+
+
+    <small>© 2026 Charding. Todos los derechos reservados.</small>
+</footer>
+
+<a href="#" class="whatsapp-flotante" id="whatsapp-flotante" aria-label="Contactar por WhatsApp">
+    WhatsApp
+</a>
+
+<!-- BOTÓN FLOTANTE DEL CARRITO -->
+<button id="boton-carrito" class="boton-carrito">
+    🛒
+    <span id="contador-carrito">0</span>
+</button>
+
+<!-- VENTANA DEL CARRITO -->
+<div id="ventana-carrito" class="ventana-carrito">
+    <div class="contenido-carrito">
+
+        <button id="cerrar-carrito" class="cerrar-carrito">✕</button>
+
+        <h2>🛒 Mi pedido</h2>
+
+        <div id="lista-carrito">
+            <p>Tu carrito está vacío.</p>
+        </div>
+
+        <div class="total-carrito">
+            <h3>Total: S/ <span id="total-carrito">0.00</span></h3>
+        </div>
+
+<div class="opciones-entrega">
+    <h3>¿Cómo deseas recibir tu pedido?</h3>
+
+    <label>
+        <input type="radio" name="entrega" value="delivery">
+        Delivery (+ S/ 3.00)
+    </label>
+
+    <label>
+        <input type="radio" name="entrega" value="local" checked>
+        Recojo en el local (gratis)
+    </label>
+</div>
+
+
+
+<!-- DATOS DEL CLIENTE -->
+<div class="datos-cliente">
+
+    <h3>👤 Datos del cliente</h3>
+
+    <!-- NOMBRE COMPLETO -->
+    <div class="campo-cliente">
+        <label for="nombre-cliente">Nombre completo</label>
+        <input
+            type="text"
+            id="nombre-cliente"
+            placeholder="Ej. Elder Vasquez"
+        >
+    </div>
+
+    <!-- TELÉFONO -->
+    <div class="campo-cliente">
+        <label for="telefono-cliente">Número de teléfono</label>
+        <input
+            type="tel"
+            id="telefono-cliente"
+            placeholder="Ej. 987654321"
+        >
+    </div>
+
+    <!-- CORREO ELECTRÓNICO -->
+    <div class="campo-cliente">
+        <label for="correo-cliente">Correo electrónico</label>
+        <input
+            type="email"
+            id="correo-cliente"
+            placeholder="Ej. correo@gmail.com"
+        >
+    </div>
+
+    <!-- DIRECCIÓN -->
+    <div class="campo-cliente">
+        <label for="direccion-cliente">Dirección de entrega</label>
+        <textarea
+            id="direccion-cliente"
+            placeholder="Escribe tu dirección y una referencia"
+            rows="3"
+        ></textarea>
+    </div>
+
+</div>
+
+<p id="costo-delivery">Costo de delivery: S/ 0.00</p>
+
+<!-- MÉTODO DE PAGO -->
+<div class="metodo-pago">
+
+    <h3>💳 ¿Cómo deseas pagar?</h3>
+
+    <label>
+        <input type="radio" name="metodo-pago" value="Yape">
+        Pagar con Yape
+    </label>
+
+    <label>
+        <input type="radio" name="metodo-pago" value="Efectivo" checked>
+        Pagar en efectivo
+    </label>
+
+    <!-- INFORMACIÓN DE YAPE -->
+    <div id="informacion-yape" style="display: none;">
+
+        <p><strong>Yape: 976240888</strong></p>
+
+        <img src="imagen/yape.jpeg"
+             alt="Código QR de Yape"
+             class="qr-yape">
+
+        <button type="button" id="copiar-yape">
+            📋 Copiar número de Yape
+        </button>
+
+        <p>Realiza el pago y envía tu captura por WhatsApp.</p>
+
+    </div>
+
+    <!-- INFORMACIÓN DE EFECTIVO -->
+    <div id="informacion-efectivo" style="display: none;">
+        <p>Paga en efectivo al recibir tu pedido.</p>
+    </div>
+
+    <button id="vaciar-carrito">Vaciar carrito</button>
+    <button id="finalizar-pedido">Realizar pedido</button>
+
+</div>
+
+<!-- CONEXIÓN JAVASCRIPT -->
+<script src="script.js" defer></script>
+
+</body>
+</html>
