@@ -354,13 +354,11 @@ if (botonFinalizar) {
         if (!confirmar) {
             return;
         }
+// ABRIR WHATSAPP DIRECTAMENTE
+const enlaceWhatsApp = "https://wa.me/" + numeroWhatsApp +
+    "?text=" + encodeURIComponent(mensaje);
 
-        // ABRIR WHATSAPP
-        window.open(
-            "https://wa.me/" + numeroWhatsApp +
-            "?text=" + encodeURIComponent(mensaje),
-            "_blank"
-        );
+window.location.href = enlaceWhatsApp;
     });
 }
 
